@@ -117,7 +117,7 @@ def tobs():
 @app.route("/api/v1.0/tstats/<start>")    
 @app.route("/api/v1.0/tstats/<start>/<end>")
 def tstats(start, end=None):
-    # Autocomplete end date if not given by user
+    # complete end date if not given by user
     if not end:
         end = dt.date.max
     # Create our session (link) from Python to the DB
